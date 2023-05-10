@@ -7,6 +7,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    
 }
 
 .left, .right {
@@ -23,12 +24,15 @@ body {
     align-items: center;
     font-size: 24px;
     gap: 10vw;
-    color: #F86E29 
-}
+    color: #F86E29; 
+    font-weight: 700;
 
+}
 .logo {
-    width: 150px;
+    width: 175px;
     height: auto;
+    margin-bottom: -48px;
+    border-radius: 45%;
+    padding-top: 16px;
 }
-
 
