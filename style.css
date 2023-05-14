@@ -1,38 +1,124 @@
 body {
-    font-family: "Roboto", sans-serif;
     margin: 0;
+    font-family: 'Quicksand', sans-serif;
 }
-.header {
-    background-color: #EBFEFF;
+
+header {
+    background-color: #EBFEFF;;
+    color: #0CC0DF;
+    padding: 20px;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    padding-bottom: 5px;
+  }
+  
+  .header-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    
-}
+  }
 
-.left, .right {
+  .header-left {
     display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+  
+  .logo-link img {
+    height: 100px;
+    width: auto;
+    border-radius: 50%;
+  }
+  
+  nav {
     justify-content: center;
-    width: 100%;
-}
-
-.header-links {
+    margin-top: -16px;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    list-style-type: none;
+  }
+  
+  nav ul li {
+    margin-right: 30px;
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  nav ul li a {
+    color: #0CC0DF;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  nav ul li a:hover {
+    color: #5CE1E6;
+  }
+  
+  .contact-info {
     display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: right;
+    margin-top: -16px;
+  }
+  
+  .contact-info p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .contact-info p:first-child {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  #about {
+    background: url("./images/ice-cream-shop.jpg") no-repeat center center fixed;
+    background-size: cover;
+    padding: 100px 50px;
+  }
+  
+  .about-container {
+    background-color: rgba(12, 192, 223, 0.8);
+    color: white;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
     align-items: center;
+
+  }
+  
+  .section-title {
+    font-size: 48px;
+    font-weight: 900;
+    margin-top: 0;
+    margin-bottom: 16px;
+    width: 85%;
+    padding: 8px 0 32px 0;
+    border-bottom: solid 5px white;
+  }
+  
+  .section-subtitle {
     font-size: 24px;
-    gap: 10vw;
-    color: #F86E29; 
-    font-weight: 700;
-
-}
-.logo {
-    width: 175px;
-    height: auto;
-    margin-bottom: -48px;
-    border-radius: 45%;
-    padding-top: 16px;
-}
-
+    font-weight: bold;
+    margin-top: 8px;
+    max-width: 85%;
+    justify-content: center;
+  }
+  
