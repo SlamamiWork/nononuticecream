@@ -170,4 +170,9 @@ header {
     border-radius: 10px;
   }
 
-  
+  #order-form {
+    width: 640px;
+    height: 3160px;
+    display: block;
+    margin: auto;
+  }
