@@ -4,7 +4,7 @@ body {
 }
 
 header {
-    background-color: #EBFEFF;;
+    background-color: #EBFEFF;
     color: #0CC0DF;
     padding: 20px;
     margin: 0;
@@ -105,13 +105,16 @@ header {
   }
   
   .section-title {
-    font-size: 48px;
-    font-weight: 900;
-    margin-top: 0;
-    margin-bottom: 16px;
-    width: 85%;
-    padding: 8px 0 32px 0;
-    border-bottom: solid 5px white;
+    font-size: 60px;
+    font-weight: 901;
+    margin-top: 16px;
+    margin-bottom: 50px;
+    width: 80%;
+    color: #0CC0DF;
+    background-color: #EBFEFF;
+    border-radius: 7.5px;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
   
   .section-subtitle {
@@ -121,4 +124,50 @@ header {
     max-width: 85%;
     justify-content: center;
   }
+  
+  .values {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    gap: 48px;
+    padding: 32px 10%; 
+  }
+  
+  .values-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  
+  .caption-container {
+    text-align: center;
+    max-width: 60%;
+    color: black;
+    background-color: #DAFDFF;
+    padding: 40px 24px;
+    border-radius: 7.5px;
+    
+  }
+  
+  .caption-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    color: #F86E29;
+    font-weight: 901;
+  }
+  
+  .caption {
+    font-size: 16px;
+    margin: 8px 0 0 0;
+  }
+  
+  .values-item img {
+    width: 30%;
+    height: 150px;
+    border-radius: 10px;
+  }
+
   
