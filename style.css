@@ -88,30 +88,33 @@ header {
   #about {
     background: url("./images/ice-cream-shop.jpg") no-repeat center center fixed;
     background-size: cover;
-    padding: 100px 50px;
+    padding: 100px 100px;
   }
   
   .about-container {
-    background-color: rgba(12, 192, 223, 0.8);
+    background-color: white;
     color: white;
     text-align: center;
     padding: 30px;
-    border-radius: 10px;
+    padding-bottom: 64px;
+    border-radius: 15px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
 
   }
   
   .section-title {
-    font-size: 60px;
+    font-size: 3.5em;
     font-weight: 901;
     margin-top: 16px;
-    margin-bottom: 50px;
+    margin-bottom: 32px;
     width: 80%;
-    color: #0CC0DF;
-    background-color: #EBFEFF;
+    color: #48c06c;
     border-radius: 7.5px;
     padding-top: 16px;
     padding-bottom: 16px;
@@ -120,16 +123,18 @@ header {
   .section-subtitle {
     font-size: 24px;
     font-weight: bold;
-    margin-top: 8px;
+    margin-top: 48px;
+    margin-bottom: -8px;
     max-width: 85%;
     justify-content: center;
-  }
+    color: black;
+   }
   
   .values {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-bottom: 40px;
+    margin-bottom: 8px;
     gap: 48px;
     padding: 32px 10%; 
   }
@@ -145,8 +150,7 @@ header {
     text-align: center;
     max-width: 60%;
     color: black;
-    background-color: #DAFDFF;
-    padding: 40px 24px;
+    padding: 0px 24px;
     border-radius: 7.5px;
     
   }
@@ -155,7 +159,7 @@ header {
     font-size: 24px;
     font-weight: bold;
     margin: 0;
-    color: #F86E29;
+    color: #349edb;
     font-weight: 901;
   }
   
@@ -175,4 +179,102 @@ header {
     height: 3160px;
     display: block;
     margin: auto;
+    margin-top: -16px;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 4em;
+    color: #48c06c;
+    font-weight: 1000;
+    margin-bottom: 0px;
+  }
+
+  .background-div {
+    background: url("./images/ice-cream-shop.jpg") no-repeat center center fixed;
+    background-size: cover;
+    padding: 50px 50px;
+  }
+
+  .menu {
+    background-color: white;
+    padding: 32px 48px;
+    border-radius: 25px;
+    text-align: center;
+  }
+
+  .subtitle {
+    color:#349edb;
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 16px;
+    margin-bottom: 0px;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  .option-section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .option-title {
+    color: #48c06c;
+    font-weight: 600;
+    font-size: 1.3em;
+    margin-bottom: 6px;
+  }
+
+  .option-option {
+    font-weight: 500;
+  }
+ 
+  .menu-pic {
+    display: block;
+    margin: 48px auto;
+    border-radius: 10px;
+  }
+
+  .nest {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .important {
+    text-decoration: underline;
+  }
+
+  .faq-title {
+    font-size: 2.5em;
+    color: #48c06c;
+    max-width: 85%;
+    font-weight: 900;
+    margin-bottom: 16px;
+    border: 3px solid #48c06c;
+    padding: 8px 32px;
+    border-radius: 5px;
+  }
+
+  .faq-q {
+    font-size: 1.75em;
+    color: #349edb;
+    max-width: 85%;
+    font-weight: 750;
+    margin-bottom: 0px;
+  }
+  .faq-a {
+    font-size: 1.25em;
+    color: black;
+    max-width: 85%;
+    margin-bottom: 64px;
+  }
+
+  .our-story {
+    font-size: 2.5em;
+    margin-top: 0;
+    margin-bottom: 16px;
+    color: #349edb;
   }
