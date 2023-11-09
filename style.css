@@ -3,12 +3,17 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
+@font-face {
+  font-family: 'Cheque-Regular';
+  src: url('https://nononutsicecream.com/fonts/Cheque/Commercial/OTF/Cheque-Regular.otf')
+}
+
 header {
     background-color: #EBFEFF;
     color: #0CC0DF;
     padding: 20px;
     margin: 0;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Helvetica', sans-serif;
     padding-bottom: 5px;
   }
   
@@ -40,10 +45,16 @@ header {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    flex-wrap: wrap;
   }
   
   nav ul li {
     margin-right: 30px;
+    margin-bottom: 8px;
+    padding: 4px 8px;
+    border: solid 2px #0CC0DF;;
+    border-radius: 5px;
+    
   }
   
   nav ul li:last-child {
@@ -88,21 +99,21 @@ header {
   #about {
     background: url("./images/ice-cream-shop.jpg") no-repeat center center fixed;
     background-size: cover;
-    padding: 100px 100px;
+    padding: 5%;
   }
   
   .about-container {
     background-color: white;
     color: white;
     text-align: center;
-    padding: 30px;
+    padding: 8px;
     padding-bottom: 64px;
     border-radius: 15px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 60%;
+    max-width: 80%;
     margin-left: auto;
     margin-right: auto;
 
@@ -112,7 +123,7 @@ header {
     font-size: 3.5em;
     font-weight: 901;
     margin-top: 16px;
-    margin-bottom: 32px;
+    margin-bottom: 16px;
     width: 80%;
     color: #48c06c;
     border-radius: 7.5px;
@@ -252,7 +263,7 @@ header {
     color: #48c06c;
     max-width: 85%;
     font-weight: 900;
-    margin-bottom: 16px;
+    margin-bottom: 0;
     border: 3px solid #48c06c;
     padding: 8px 32px;
     border-radius: 5px;
@@ -269,7 +280,7 @@ header {
     font-size: 1.25em;
     color: black;
     max-width: 85%;
-    margin-bottom: 64px;
+    margin-bottom: 32px;
   }
 
   .our-story {
