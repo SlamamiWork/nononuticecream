@@ -11,10 +11,9 @@ body {
 header {
     background-color: #EBFEFF;
     color: #0CC0DF;
-    padding: 20px;
+    padding: 32px 20px 16px 20px;
     margin: 0;
     font-family: 'Helvetica', sans-serif;
-    padding-bottom: 5px;
   }
   
   .header-container {
@@ -99,12 +98,11 @@ header {
   #about {
     background: url("./images/ice-cream-shop.jpg") no-repeat center center fixed;
     background-size: cover;
-    padding: 5%;
+    padding: 5% 0;
   }
   
   .about-container {
     background-color: white;
-    color: white;
     text-align: center;
     padding: 8px;
     padding-bottom: 64px;
@@ -113,17 +111,16 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 80%;
+    max-width: 90%;
     margin-left: auto;
     margin-right: auto;
 
   }
-  
+
   .section-title {
     font-size: 3.5em;
     font-weight: 901;
-    margin-top: 16px;
-    margin-bottom: 16px;
+    margin: 16px auto;
     width: 80%;
     color: #48c06c;
     border-radius: 7.5px;
@@ -140,6 +137,28 @@ header {
     justify-content: center;
     color: black;
    }
+
+   .slogan-list {
+    padding: 0 24px;
+    text-align: center;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 0px;
+    color: #0CC0DF;
+   }
+
+   .sub-list {
+    padding: 0;
+   }
+
+   .no {
+    font-size: 24px;
+    width: 50%;
+    padding-bottom: 16px;
+    font-weight: bold;
+   }
   
   .values {
     display: flex;
@@ -148,6 +167,13 @@ header {
     margin-bottom: 8px;
     gap: 48px;
     padding: 32px 10%; 
+  }
+  
+  .left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
   }
   
   .values-item {
@@ -186,7 +212,7 @@ header {
   }
 
   #order-form {
-    width: 640px;
+    width: 85%;
     height: 3160px;
     display: block;
     margin: auto;
@@ -258,6 +284,8 @@ header {
     text-decoration: underline;
   }
 
+
+
   .faq-title {
     font-size: 2.5em;
     color: #48c06c;
@@ -267,6 +295,12 @@ header {
     border: 3px solid #48c06c;
     padding: 8px 32px;
     border-radius: 5px;
+  }
+
+  .faq-div {
+    display: flex;
+    margin: 0 auto;
+    min-height: 100vh;
   }
 
   .faq-q {
@@ -288,4 +322,110 @@ header {
     margin-top: 0;
     margin-bottom: 16px;
     color: #349edb;
+  }
+
+  .sizes {
+    width: 100%;
+  }
+
+  /* Everything after is part of remodel */
+
+  .body-new {
+    background: url("./images/ice-cream-shop.jpg") no-repeat center center fixed;
+    background-size: cover;
+    padding: 5% 0;
+  }
+
+  .main {
+    background: white;
+    width: 90%;
+    min-height: 100vh;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 48px 0;
+  }
+
+  .title-new {
+      text-align: center;
+      font-size: 4em;
+      color: #48c06c;
+      font-weight: 1000;
+      padding: 48px 0px 16spx 0px;
+      margin: 0 auto;
+  }
+
+  .faq {
+    max-width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 2px solid black;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+  }
+
+  .faq .first {
+    border-top: 2px solid black;
+    padding-top: 40px;
+  }
+
+  .question h3 {
+    font-size: 1.6rem;
+    margin: 0;
+  }
+
+  .answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height margin-top 1.4s ease;
+    }
+
+  .answer p {
+    line-height: 1.3;
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  .faq.active .answer {
+    max-height: 100%;
+    animation: fade 1s ease-in-out;
+    margin-top: 32px;
+  }
+
+  .faq.active svg {
+    transform: rotate(180deg);
+  }
+
+  svg {
+    transition: transform .5s ease-in;
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translate(0px);
+    }
+  }
+
+  a {
+    font-style: italic;
+    font-size: 1rem;
+  }
+
+  .answer h4 {
+    font-size: 1.4rem;
+    margin: 0;
+    margin-bottom: -16px;
+    
   }
