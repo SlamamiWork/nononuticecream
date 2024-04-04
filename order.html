@@ -5,31 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>N3IC Order</title>
+    <title>N3IC FAQ</title>
 </head>
 <body>
-<header>
-    <div class="header-container">
-      <div class="header-left"> 
-          <a href="#" class="logo-link"><img src="./images/logo.gif" alt="No No Nut Ice Cream Logo"></a>
-      <nav>
-        <ul>
-          <li><a href="./index.html" class="logo-link">Home</a></li>
-          <li><a href="./menu.html">Menu</a></li>
-          <li><a href="./order.html">Order</a></li>
-          <li><a href="./faq.html">FAQ</a></li>
-        </ul>
-      </nav>
-      </div>
-      <div class="contact-info">
-        <p>1417 Hwy 17 S</p>
-      <p>North Myrtle Beach, SC 29582</p>
-      <p>Phone: (828) 237-3694</p>
-      </div>
+    <header>
+        <div id="brand"><a href="./index.html"><img src="./images/logo.gif"></a></div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./menu.html">Menu</a></li>
+                <li><a href="./order.html">Order</a></li>
+                <li><a href="./faq.html">FAQ</a></li>
+                <li><a href="./about.html">About</a></li>
+            </ul>
+        </nav>
+        <div id="hamburger" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./menu.html">Menu</a></li>
+                <li><a href="./order.html">Order</a></li>
+                <li><a href="./faq.html">FAQ</a></li>
+                <li><a href="./about.html">About</a></li>
+            </ul>
+        </div>
+    </header>
+    <div id="non-home-page">
+      <iframe id="order-form" src="https://docs.google.com/forms/d/e/1FAIpQLSfEZrWdfulof39Vv6t2wGDJlFd7aIOWWB0KrIdRE-4zBf0tZA/viewform?embedded=true" frameborder="0">Loading…</iframe>
     </div>
-  </header>
-    <div id="about">
-        <iframe id="order-form" src="https://docs.google.com/forms/d/e/1FAIpQLSfEZrWdfulof39Vv6t2wGDJlFd7aIOWWB0KrIdRE-4zBf0tZA/viewform?embedded=true" frameborder="0">Loading…</iframe>
-    </div>
+    <script src="./main.js"></script>
 </body>
 </html>

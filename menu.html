@@ -5,67 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>N3IC Home</title>
+    <title>N3IC FAQ</title>
 </head>
 <body>
-<header>
-  <div class="header-container">
-    <div class="header-left"> 
-        <a href="#" class="logo-link"><img src="./images/logo.gif" alt="No No Nut Ice Cream Logo"></a>
-    <nav>
-      <ul>
-        <li><a href="./index.html" class="logo-link">Home</a></li>
-        <li><a href="./menu.html">Menu</a></li>
-        <li><a href="./order.html">Order</a></li>
-        <li><a href="./faq.html">FAQ</a></li>
-      </ul>
-    </nav>
+    <header>
+        <div id="brand"><a href="./index.html"><img src="./images/logo.gif"></a></div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./menu.html">Menu</a></li>
+                <li><a href="./order.html">Order</a></li>
+                <li><a href="./faq.html">FAQ</a></li>
+                <li><a href="./about.html">About</a></li>
+            </ul>
+        </nav>
+        <div id="hamburger" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./menu.html">Menu</a></li>
+                <li><a href="./order.html">Order</a></li>
+                <li><a href="./faq.html">FAQ</a></li>
+                <li><a href="./about.html">About</a></li>
+            </ul>
+        </div>
+    </header>
+    <div id="non-home-page" class="menu-page">
+      <img id="menu-img" src="./images/menu.jpg">
     </div>
-    <div class="contact-info">
-      <p>1417 Hwy 17 S</p>
-      <p>North Myrtle Beach, SC 29582</p>
-      <p>Phone: (828) 237-3694</p>
-    </div>
-  </div>
-  </header>
-  <section id="about">
-<div class="about-container">
-  <div class="menu-title">
-    <h1 class="section-title">No No Nuts Ice Cream</h1>
-    <ul class="slogan-list">
-        <li class="no">No Nuts. </li>
-        <li class="no">No Dairy. </li>
-        <li class="no">No Gluten. </li>
-        <li class="no">No Dyes. </li>
-        <li class="no">No Lies. </li>
-    </ul>
-  </div>
-  <div class="sizes">
-    <ul class="slogan-list">
-      <span class="left-column">
-        <ul class="sub-list">
-            <li class="item-left">Single Scoop</li>
-            <li class="item-right">$6.00</li>
-        </ul>
-        <ul class="sub-list">
-            <li class="item-left">Double Scoop</li>
-            <li class="item-right">$7.00</li>
-        </ul>
-      </span>
-      <span class="right-column">
-        <ul class="sub-list">
-            <li class="item-left">To Go Pints</li>
-            <li class="item-right">$9.99</li>
-        </ul>
-        <ul class="sub-list">
-            <li class="item-left">Quarts</li>
-            <li clas="item-right">$12.99</li>
-        </ul>
-        <ul class="sub-list">
-            <li class="item-left">Fun Packs</li>
-            <li class="item-right">$24.99</li>
-        </ul>
-    </ul>
-  </div>
-  </div>
-  </section>
+    <script src="./main.js"></script>
+</body>
+</html>

@@ -1,431 +1,376 @@
-body {
-    margin: 0;
-    font-family: 'Quicksand', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  letter-spacing: .1rem;
 }
 
-@font-face {
-  font-family: 'Cheque-Regular';
-  src: url('https://nononutsicecream.com/fonts/Cheque/Commercial/OTF/Cheque-Regular.otf')
+body {
+  background-color: white;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  height: fit-content;
+}
+
+a {
+  text-decoration: none;
+  font-style: normal;
+  z-index: 2;
 }
 
 header {
-    background-color: #EBFEFF;
-    color: #0CC0DF;
-    padding: 32px 20px 16px 20px;
-    margin: 0;
-    font-family: 'Helvetica', sans-serif;
-  }
-  
-  .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+  padding: 0 20px;
+  background-color: #5CE1E6;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  border-bottom: 2px solid black;
+}
 
-  .header-left {
-    display: flex;
-    align-items: center;
-    gap: 32px;
-  }
-  
-  .logo-link img {
-    height: 100px;
-    width: auto;
-    border-radius: 50%;
-  }
-  
-  nav {
-    justify-content: center;
-    margin-top: -16px;
-  }
-  
-  nav ul {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    flex-wrap: wrap;
-  }
-  
-  nav ul li {
-    margin-right: 30px;
-    margin-bottom: 8px;
-    padding: 4px 8px;
-    border: solid 2px #0CC0DF;;
-    border-radius: 5px;
-    
-  }
-  
-  nav ul li:last-child {
-    margin-right: 0;
-  }
-  
-  nav ul li a {
-    color: #0CC0DF;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  nav ul li a:hover {
-    color: #5CE1E6;
-  }
-  
-  .contact-info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: right;
-    margin-top: -16px;
-  }
-  
-  .contact-info p {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .contact-info p:first-child {
-    font-size: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-  }
-  #about {
-    background: url("./images/ice-cream-shop.jpg") no-repeat center center fixed;
-    background-size: cover;
-    padding: 5% 0;
-  }
-  
-  .about-container {
-    background-color: white;
-    text-align: center;
-    padding: 8px;
-    padding-bottom: 64px;
-    border-radius: 15px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+#brand {
+  display: flex;
+  align-items: center;
+}
 
-  }
+#brand img {
+  height: 50px;
+  position: relative;
+  top: 2px;
+  border-radius: 67px 67px 75px 75px;
+}
 
-  .section-title {
-    font-size: 3.5em;
-    font-weight: 901;
-    margin: 16px auto;
-    width: 80%;
-    color: #48c06c;
-    border-radius: 7.5px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
-  
-  .section-subtitle {
-    font-size: 24px;
-    font-weight: bold;
-    margin-top: 48px;
-    margin-bottom: -8px;
-    max-width: 85%;
-    justify-content: center;
-    color: black;
-   }
+#brand a {
+  color: white;
+}
 
-   .slogan-list {
-    padding: 0 24px;
-    text-align: center;
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 0px;
-    color: #0CC0DF;
-   }
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 16px;
+  font-weight: 1000;
+}
 
-   .sub-list {
-    padding: 0;
-   }
+ul a {
+  color: white;
+}
 
-   .no {
-    font-size: 24px;
-    width: 50%;
-    padding-bottom: 16px;
-    font-weight: bold;
-   }
-  
-  .values {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-bottom: 8px;
-    gap: 48px;
-    padding: 32px 10%; 
-  }
-  
-  .left-column {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+ul li {
+  padding: top;
+  margin-left: 10px;
+}
 
-  }
-  
-  .values-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-  }
-  
-  .caption-container {
-    text-align: center;
-    max-width: 60%;
-    color: black;
-    padding: 0px 24px;
-    border-radius: 7.5px;
-    
-  }
-  
-  .caption-heading {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 0;
-    color: #349edb;
-    font-weight: 901;
-  }
-  
-  .caption {
-    font-size: 16px;
-    margin: 8px 0 0 0;
-  }
-  
-  .values-item img {
-    width: 30%;
-    height: 150px;
-    border-radius: 10px;
-  }
+ul li:hover {
+  transform: scale(1.1);
+}
 
-  #order-form {
-    width: 85%;
-    height: 3160px;
-    display: block;
-    margin: auto;
-    margin-top: -16px;
-  }
+#hamburger {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
 
-  .title {
+#hamburger div {
+  width: 28px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px,6px);
+}
+
+.open bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 24px;
+  padding-top: 24px;
+  height: 268px;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 64px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+  background-color: rgba(92, 225, 230, 1);
+  z-index: 100;
+  border-bottom: 2px solid black;
+}
+
+#hero-div {
+  height: 400px;
+}
+
+.tile {
+  height: 200px;
+  background-color: #EBFEFF;
+  width: 100%;
+  overflow: clip;
+  position: relative;
+  text-align: center;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid black;
+}
+
+#hero-div img {
+  top: -1000px;
+}
+
+.background {
+  left: -200px;
+  position: absolute;
+  width: 2560px;
+  filter: brightness(30%);
+  opacity: 0.9;
+  z-index: 1;
+}
+
+#hero-div h1 {
+  font-size: 48px;
+  margin-bottom: 4px;
+  line-height: 110%;
+}
+
+#hero-div .hero {
+  color: white;
+  z-index: 2;
+}
+
+#hero-div a {
+  margin: -10px;
+  cursor: pointer;
+}
+
+p {
+  margin-bottom: 40px;
+}
+
+#hero-div button {
+  background-color: #5CE1E6;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 24px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 1000;
+  text-transform: uppercase;
+
+}
+
+.small-tile {
+  height: 200px;
+}
+
+#location img {
+  top: -600px;
+}
+
+#order img {
+  top: -600px;
+  left: -1000px;
+}
+
+#faq img {
+  top: -900px;
+  left: -200px;
+}
+
+#about img {
+  height: 1400px;
+  top: -280px;
+  left: -500px;
+}
+
+#about {
+  border-bottom: 2px solid black;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  z-index: 2;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+
+/* copied from old stylesheet needs work */
+
+#non-home-page {
+  background-color: black;
+  background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url(./images/sprinkles.jpg);
+  background-position: center;
+  background-size: 1080px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+#non-home-page .title {
     text-align: center;
     font-size: 4em;
     color: #48c06c;
     font-weight: 1000;
-    margin-bottom: 0px;
-  }
-
-  .background-div {
-    background: url("./images/ice-cream-shop.jpg") no-repeat center center fixed;
-    background-size: cover;
-    padding: 50px 50px;
-  }
-
-  .menu {
+    padding: 0 40px;
+    margin: 40px auto 10px auto;
     background-color: white;
-    padding: 32px 48px;
-    border-radius: 25px;
-    text-align: center;
+    border-radius: 7.5px;
+    box-shadow: black 0 0 10px;
+    height: fit-content;
+}
+
+.faq {
+  max-width: 90%;
+  margin: 0 auto;
+  cursor: pointer;
+  background-color: white;
+  padding: 16px 40px;
+  border-radius: 7.5px;
+  color: #48c06c;
+  box-shadow: black 0px 0px 15px;
+}
+
+.question {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: space-between;
+  align-items: center;
+  height: fit-content;
+  gap: 16px;
+}
+
+.question h3 {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height margin-top 1.2s ease;
   }
 
-  .subtitle {
-    color:#349edb;
-    font-size: 2em;
-    font-weight: bold;
-    margin-top: 16px;
-    margin-bottom: 0px;
+.answer p {
+  line-height: 1.3;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.faq.active .answer {
+  max-height: 100%;
+  animation: fade 1.2s ease-in-out;
+  margin-top: 32px;
+}
+
+.faq.active svg {
+  transform: rotate(180deg);
+}
+
+svg {
+  transition: transform 1s ease-in;
+  flex-shrink: 0;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
   }
-
-  ul {
-    list-style-type: none;
+  to {
+    opacity: 1;
+    transform: translate(0px);
   }
+}
 
-  .option-section {
-    display: flex;
-    flex-wrap: wrap;
-  }
+.answer a {
+  font-style: italic;
+  font-size: 1rem;
+}
 
-  .option-title {
-    color: #48c06c;
-    font-weight: 600;
-    font-size: 1.3em;
-    margin-bottom: 6px;
-  }
-
-  .option-option {
-    font-weight: 500;
-  }
- 
-  .menu-pic {
-    display: block;
-    margin: 48px auto;
-    border-radius: 10px;
-  }
-
-  .nest {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .important {
-    text-decoration: underline;
-  }
-
-
-
-  .faq-title {
-    font-size: 2.5em;
-    color: #48c06c;
-    max-width: 85%;
-    font-weight: 900;
-    margin-bottom: 0;
-    border: 3px solid #48c06c;
-    padding: 8px 32px;
-    border-radius: 5px;
-  }
-
-  .faq-div {
-    display: flex;
-    margin: 0 auto;
-    min-height: 100vh;
-  }
-
-  .faq-q {
-    font-size: 1.75em;
-    color: #349edb;
-    max-width: 85%;
-    font-weight: 750;
-    margin-bottom: 0px;
-  }
-  .faq-a {
-    font-size: 1.25em;
-    color: black;
-    max-width: 85%;
-    margin-bottom: 32px;
-  }
-
-  .our-story {
-    font-size: 2.5em;
-    margin-top: 0;
-    margin-bottom: 16px;
-    color: #349edb;
-  }
-
-  .sizes {
-    width: 100%;
-  }
-
-  /* Everything after is part of remodel */
-
-  .body-new {
-    background: url("./images/ice-cream-shop.jpg") no-repeat center center fixed;
-    background-size: cover;
-    padding: 5% 0;
-  }
-
-  .main {
-    background: white;
-    width: 90%;
-    min-height: 100vh;
-    margin: 0 auto;
-    border-radius: 5px;
-    padding: 48px 0;
-  }
-
-  .title-new {
-      text-align: center;
-      font-size: 4em;
-      color: #48c06c;
-      font-weight: 1000;
-      padding: 48px 0px 16spx 0px;
-      margin: 0 auto;
-  }
-
-  .faq {
-    max-width: 90%;
-    margin: 0 auto;
-    align-items: center;
-    cursor: pointer;
-    border-bottom: 2px solid black;
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-
-  .question {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: auto;
-  }
-
-  .faq .first {
-    border-top: 2px solid black;
-    padding-top: 40px;
-  }
-
-  .question h3 {
-    font-size: 1.6rem;
-    margin: 0;
-  }
-
-  .answer {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height margin-top 1.4s ease;
-    }
-
-  .answer p {
-    line-height: 1.3;
-    font-size: 1.2rem;
-    margin: 0;
-  }
-
-  .faq.active .answer {
-    max-height: 100%;
-    animation: fade 1s ease-in-out;
-    margin-top: 32px;
-  }
-
-  .faq.active svg {
-    transform: rotate(180deg);
-  }
-
-  svg {
-    transition: transform .5s ease-in;
-  }
+.answer h4 {
+  font-size: 1.2rem;
+  margin: 0;
+  margin-bottom: -16px;
   
-  @keyframes fade {
-    from {
-      opacity: 0;
-      transform: translateY(-10px);
-    }
-    to {
-      opacity: 1;
-      transform: translate(0px);
-    }
+}
+
+@media only screen and (max-width: 600px) {
+  header nav {
+    display: none;
   }
 
-  a {
-    font-style: italic;
-    font-size: 1rem;
+  #hamburger {
+    display: block;
   }
 
-  .answer h4 {
-    font-size: 1.4rem;
-    margin: 0;
-    margin-bottom: -16px;
-    
+  #hero-div img {
+    top: -200px;
+    left: 0px;
   }
+
+  #contact img {
+    top: -125px;
+  }
+
+  #order img {
+    top: -100px;
+    left: -300px;
+  }
+
+  #faq img {
+    top: -150px;
+  }
+
+  #about img {
+    width: 800px;
+    height: auto;
+    top: -40px;
+    left: -150px;
+  }
+
+  .tile img {
+    width: 800px;
+  }
+}
+
+#order-form {
+  height: 3600px;
+  overflow: visible;
+  padding-top: 40px;
+}
+
+.menu-page {
+  padding: 40px 20px;
+  height: 915px;
+}
+
+#menu-img {
+  border-radius: 7.5px;
+  box-shadow: black 0 0 15px;
+}
