@@ -230,6 +230,7 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  padding-bottom: 40px;
 }
 
 #non-home-page .title {
@@ -293,7 +294,7 @@ h2 {
 }
 
 svg {
-  transition: transform 1s ease-in;
+  transition: transform 0.1s ease-in;
   flex-shrink: 0;
 }
 
