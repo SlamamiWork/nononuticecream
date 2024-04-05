@@ -244,6 +244,7 @@ h2 {
     border-radius: 7.5px;
     box-shadow: black 0 0 10px;
     height: fit-content;
+    max-width: 80%;
 }
 
 .faq {
@@ -374,4 +375,27 @@ svg {
 #menu-img {
   border-radius: 7.5px;
   box-shadow: black 0 0 15px;
+}
+
+.about-page {
+  padding-top: 40px;
+}
+
+.about-page p {
+  padding: 16px;
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.about-page .faq {
+  padding: 16px 16px;
+  cursor: default;
+}
+
+.about-page h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #48c06c;
+  margin-top: 10px;
 }
