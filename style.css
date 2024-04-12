@@ -233,6 +233,18 @@ h2 {
   padding-bottom: 40px;
 }
 
+#menu-page {
+  background-color: black;
+  background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url(./images/sprinkles.jpg);
+  background-position: center;
+  background-size: 1080px;
+  min-height: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 0;
+}
+
 #non-home-page .title {
     text-align: center;
     font-size: 4em;
@@ -248,7 +260,7 @@ h2 {
 }
 
 .faq {
-  max-width: 90%;
+  width: 90%;
   margin: 0 auto;
   cursor: pointer;
   background-color: white;
@@ -322,6 +334,10 @@ svg {
   
 }
 
+#menu-portrait {
+  display: none;
+}
+
 @media only screen and (max-width: 600px) {
   header nav {
     display: none;
@@ -359,6 +375,14 @@ svg {
   .tile img {
     width: 800px;
   }
+
+  #menu-landscape {
+    display: none
+  }
+
+  #menu-portrait {
+    display: flex;
+  }
 }
 
 #order-form {
@@ -367,14 +391,10 @@ svg {
   padding-top: 40px;
 }
 
-.menu-page {
-  padding: 40px 20px;
-  height: 915px;
-}
-
-#menu-img {
+.menu-img {
   border-radius: 7.5px;
   box-shadow: black 0 0 15px;
+  margin: 40px 5%;
 }
 
 .about-page {
