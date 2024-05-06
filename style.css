@@ -407,10 +407,11 @@ svg {
 }
 
 .about-page p {
-  padding: 16px;
+  padding: 0 10% 30px 10%;
   margin: 0;
   font-weight: 600;
   font-size: 1.1rem;
+  text-align: center;
 }
 
 .about-page .faq {
@@ -423,4 +424,46 @@ svg {
   font-weight: 700;
   color: #48c06c;
   margin-top: 10px;
+}
+
+.orange {
+  color: #F86E29;
+}
+
+#funpack {
+    font-size: 3em;
+    color: #48c06c;
+    font-weight: 1000;
+    margin: 20px auto 20px auto;
+    background-color: white;
+    border-radius: 7.5px;
+    text-align: center;
+}
+
+.order-heading {
+  display: block;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.order-section {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10%;
+}
+
+h5 {
+  position: absolute;
+  top: 72px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 100;
+  background-color:rgba(92, 225, 230, 0.6);
+  padding: 0 16px;
 }
