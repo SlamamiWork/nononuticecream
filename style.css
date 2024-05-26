@@ -476,18 +476,19 @@ h5 {
 #socials-order {
   display: flex;
   justify-content: space-around;
-  max-width: 50%;
-  gap: 75%;
+  max-width: 100%;
+  gap: 30%;
   margin: 0 auto 20px auto;
 }
 
 #socials-index {
   display: flex;
   justify-content: space-around;
-  max-width: 50%;
-  gap: 75%;
-  margin: 0 auto 0 auto;
+  max-width: 100%;
+  gap: 100%;
+  margin: 20px auto 40px auto;
   z-index: 102;
+  height: 10px;
 }
 
 .fa {
@@ -511,14 +512,6 @@ h5 {
   flex-direction: column;
   padding: 16px 0 0 0;
   justify-content: space-around;
-}
-
-#socials-index {
-    display: flex;
-    justify-content: space-around;
-    margin: 20px auto 40px auto;
-    max-width: 50%;
-    height: 10px;
 }
 
 #caricature {
