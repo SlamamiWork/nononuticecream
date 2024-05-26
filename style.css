@@ -8,8 +8,6 @@
 }
 
 body {
-  background-color: white;
-  color: white;
   font-family: "Poppins", sans-serif;
   height: fit-content;
 }
@@ -17,7 +15,7 @@ body {
 a {
   text-decoration: none;
   font-style: normal;
-  z-index: 2;
+  z-index: 102;
 }
 
 header {
@@ -127,11 +125,11 @@ ul li:hover {
   height: 200px;
   background-color: #EBFEFF;
   width: 100%;
-  overflow: clip;
+  overflow: hidden;
   position: relative;
   text-align: center;
-  z-index: 0;
   display: flex;
+  z-index: 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -148,7 +146,7 @@ ul li:hover {
   width: 2560px;
   filter: brightness(30%);
   opacity: 0.9;
-  z-index: 1;
+  z-index: 0;
 }
 
 #hero-div h1 {
@@ -288,7 +286,7 @@ h2 {
 .answer {
   max-height: 0;
   overflow: hidden;
-  transition: max-height margin-top 1.2s ease;
+  transition: max-height margin-top margin-bottom 1.2s ease;
   }
 
 .answer p {
@@ -301,6 +299,7 @@ h2 {
   max-height: 100%;
   animation: fade 1.2s ease-in-out;
   margin-top: 32px;
+  margin-bottom: 20px;
 }
 
 .faq.active svg {
@@ -474,26 +473,60 @@ h5 {
   margin-top: 50px;
 }
 
-#socials {
+#socials-order {
   display: flex;
   justify-content: space-around;
-  margin: 20px auto 40px auto;
   max-width: 50%;
+  gap: 75%;
+  margin: 0 auto 20px auto;
+}
+
+#socials-index {
+  display: flex;
+  justify-content: space-around;
+  max-width: 50%;
+  gap: 75%;
+  margin: 0 auto 0 auto;
+  z-index: 102;
 }
 
 .fa {
   padding: 20px;
-  font-size: 30px;
   width: 55px;
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
   background: #48c06c;
   color: white;
-  z-index: 99;
+  z-index: 102;
+  height: 55px;
 }
 
 .fa:hover {
   opacity: 0.7;
 }
 
+#socials-section {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 0 0 0;
+  justify-content: space-around;
+}
+
+#socials-index {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto 40px auto;
+    max-width: 50%;
+    height: 10px;
+}
+
+#caricature {
+  width: 100%;
+  padding: 20px 10%;
+  border-radius: 50%;
+}
+
+#our-story {
+  margin-bottom: 20px;
+}
