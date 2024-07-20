@@ -10,6 +10,7 @@
 body {
   font-family: "Poppins", sans-serif;
   height: fit-content;
+  width: 100%;
 }
 
 a {
@@ -25,7 +26,8 @@ header {
   display: flex;
   justify-content: space-between;
   text-transform: uppercase;
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid black;
+  z-index: 3;
 }
 
 #brand {
@@ -114,11 +116,12 @@ ul li:hover {
   width: 100%;
   background-color: rgba(92, 225, 230, 1);
   z-index: 101;
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid black;
 }
 
 #hero-div {
-  height: 400px;
+  height: 900px;
+  border-bottom: 1px solid black;
 }
 
 .tile {
@@ -136,17 +139,12 @@ ul li:hover {
   border-bottom: 2px solid black;
 }
 
-#hero-div img {
-  top: -1000px;
-}
-
-.background {
-  left: -200px;
+#index-background {
   position: absolute;
-  width: 2560px;
+  width: 3000px;
   filter: brightness(30%);
   opacity: 0.9;
-  z-index: 0;
+  z-index: 1;
 }
 
 #hero-div h1 {
@@ -166,7 +164,7 @@ ul li:hover {
 }
 
 p {
-  margin-bottom: 40px;
+  margin-bottom: 24px;
 }
 
 #hero-div button {
@@ -179,35 +177,45 @@ p {
   font-size: 16px;
   font-weight: 1000;
   text-transform: uppercase;
+  margin-bottom: 80px;
 
+}
+
+#tour {
+  display: flex;
+  background:rgba(92, 225, 230, 1);
+  padding: 30px 5%;
+  flex: 1 1 auto;
+  gap: 5%;
+  flex-wrap: wrap;
+}
+
+#tour a {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: space-around;
+  padding: 0;
+  flex-basis: 26%;
 }
 
 .small-tile {
-  height: 200px;
+  background:white;
+  border-radius: 10px;
+  box-shadow: black 0px 0px 15px;
+  border: none;
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px;
+  margin: 20px 0;
+  min-height: 150px;
+  min-width: 200px;
 }
 
-#location img {
-  top: -600px;
-}
-
-#order img {
-  top: -600px;
-  left: -1000px;
-}
-
-#faq img {
-  top: -900px;
-  left: -200px;
-}
-
-#about img {
-  height: 1400px;
-  top: -500px;
-  left: -600px;
-}
-
-#about {
-  border-bottom: 2px solid black;
+.small-tile h2 {
+  color: #48c06c;
+  font-weight: 900;
 }
 
 h2 {
@@ -216,6 +224,10 @@ h2 {
   z-index: 2;
   line-height: 150%;
   text-transform: uppercase;
+}
+
+#hero-div h2 {
+  margin-bottom: 16px;
 }
 
 /* copied from old stylesheet needs work */
@@ -353,37 +365,12 @@ svg {
     display: block;
   }
 
-  #hero-div img {
-    top: -200px;
-    left: 0px;
-  }
-
-  #contact img {
-    top: -125px;
-  }
-
-  #order img {
-    top: -100px;
-    left: -200px;
-  }
-
-  #faq img {
-    top: -150px;
-  }
-
-  #about img {
-    width: 800px;
-    height: auto;
-    top: -200px;
-    left: -120px;
-  }
-
-  .tile img {
-    width: 800px;
-  }
-
   #menu-landscape {
     display: none
+  }
+
+  #hero-div img {
+    right: -800px;
   }
 
   #menu-portrait {
@@ -485,7 +472,7 @@ h5 {
   display: flex;
   justify-content: space-around;
   max-width: 100%;
-  margin: 20px auto 40px auto;
+  margin: 20px auto 100px auto;
   gap: 80px;
   z-index: 102;
   height: 10px;
