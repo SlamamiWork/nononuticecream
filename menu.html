@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <title>NoNoNuts Menu</title>
 </head>
-<body>
+<body id="menu-body">
     <header>
         <div id="brand"><a href="./index.html"><img src="./images/logo.gif"></a></div>
         <nav>
@@ -32,11 +32,55 @@
             </ul>
         </div>
     </header>
-    <h5>*All ice cream is made using coconut milk*</h5>
-    <div id="menu-page">
-      <img id="menu-landscape" class="menu-img" src="./images/menu-short.png">
-      <img id="menu-portrait" class="menu-img" src="./images/menu-long.png">
+    <div class="menu-div white-bg">
+        <p class="disclaimer">
+            All of our products are made using coconut milk. Check out our <a href="./ingredients.html">ingredient information here</a>.
+            Our menu changes seasonally so please check back often for new flavors!
+        </p>
     </div>
+    <div class="menu-div img-bg" id="scoop-bg">
+        <h2>On-site Sizes</h2>
+        <ul class="scoop-options">
+            <li><div>Single<br>Scoop</div> $6</li>
+            <li><div>Double<br>Scoop</div> $7</li>
+            <li><div>Kids<br>Scoop</div> $3</li>
+            <li><div>Kids<br>Double</div> $6</li>
+            <li class="text-on-photo disclaimer">We can put your ice cream on a Joy Co. Gluten Free Cake Cone, Joy Co Gluten Free Sugar Cone, or Bowl!</li>
+        </ul>
+    </div>
+    <div class="menu-div cyan-bg">
+        <h2>To-go options</h2>
+        <ul class="scoop-options" id="to-go-div">
+            <li><div id="need-center">Pint</div> $6</li>
+            <li><div id="need-center">Quart</div> $7</li>
+            <li id="fun-pack"><div id="need-center">Fun Packs</div> $24.99</li>
+            <li class="text-on-photo disclaimer"> Fun Pack are the best way to enjoy NoNoNuts at home.<br>
+                Each comes with 2 Pints, 4 Cones OR Bowls, and Sprinkles and Sunflower Crunch OR you can double up on one topping.</li>
+        </ul>
+    </div>
+    <div class="menu-div img-bg" id="add-sprinkles-bg">
+        <h2>Toppings</h2>
+        <ul class="scoop-options" id="to-go-div">
+            <li id="fun-pack"><div id="need-center-desktop">Sprinkles by Kate's Safe and Sweet</div> $0.75</li>
+            <li id="fun-pack"><div id="need-center-desktop">Roasted Sunflower Seed Crunch</div> $0.75</li>
+        </ul>
+        <hr>
+        <h2 id="long-h2">Topping Bags by <br>No Whey Foods</h2>
+        <ul class="scoop-options" id="to-go-div">
+            <li id="fun-pack"><div id="need-center-all">Choco No Nos</div> $2.75</li>
+            <li id="fun-pack"><div>Peppermint Choco<br>No Nos</div> $2.75</li>
+            <li id="fun-pack"><div id="need-center-all">PeaNot Cups</div> $2.75</li>
+        </ul>
+    </div>
+    <!--
+    <div id="footer">
+            <ul id="footer-ul">
+                <li>Ingredients</li>
+                <li>Photos</li>
+                <li>Acknowledgements</li>
+            </ul>
+    </div> 
+    -->
     <script src="./main.js"></script>
 </body>
 </html>

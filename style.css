@@ -163,10 +163,6 @@ ul li:hover {
   cursor: pointer;
 }
 
-p {
-  margin-bottom: 24px;
-}
-
 #hero-div button {
   background-color: #5CE1E6;
   border: none;
@@ -188,6 +184,7 @@ p {
   flex: 1 1 auto;
   gap: 5%;
   flex-wrap: wrap;
+  flex-basis: 10%
 }
 
 #tour a {
@@ -195,7 +192,7 @@ p {
   flex: 1 1 auto;
   justify-content: space-around;
   padding: 0;
-  flex-basis: 26%;
+  flex-basis: 20%;
 }
 
 .small-tile {
@@ -258,9 +255,9 @@ h2 {
 
 #non-home-page .title {
     text-align: center;
-    font-size: 4em;
+    font-size: 3.5em;
     color: #48c06c;
-    font-weight: 1000;
+    font-weight: 600;
     padding: 0 40px;
     margin: 40px auto 10px auto;
     background-color: white;
@@ -293,11 +290,13 @@ h2 {
 .question h3 {
   font-size: 1.4rem;
   margin: 0;
+  font-weight: 600;
 }
 
 .answer {
   max-height: 0;
   overflow: hidden;
+  color: black;
   transition: max-height margin-top margin-bottom 1.2s ease;
   }
 
@@ -514,3 +513,156 @@ h5 {
 #socials-index li {
   margin: 0;
 }
+
+/*
+
+          NEW MENU PAGE
+                                  */
+
+.menu-div {
+  padding: 40px 5%;
+  text-align: center;
+  background-size: 100%;
+  background-position: 0, 100px;
+}
+
+#menu-body .disclaimer {
+  border: solid 1px black;
+  padding: 16px 32px;
+  background: white;
+  border-radius: 0;
+}
+
+.menu-div ul {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-basis: 50%;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.scoop-options li {
+  background: white;
+  border-radius: 5px;
+  display: flex;
+  flex-basis: 20%;
+  align-items: center;
+  gap: 8px;
+  background:rgba(92, 225, 230, .95);
+  color: black;
+  padding-right: 8px;
+  box-shadow: black 0px 0px 15px;
+  min-height: 70px;
+  margin-bottom: 16px;
+  font-weight: 500;
+  border: solid 1px black;
+}
+
+.scoop-options div {
+  background: white;
+  color: black;
+  padding: 8px 16px;
+  border-radius: 5px 0 0 5px;
+  flex-basis: 90%;
+  height: 70px;
+  align-items: center;
+}
+
+.img-bg {
+  background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.4)), url("images/ice-cream-scoop.jpg");
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  background-position: 0;
+}
+
+@media(max-width: 600px) {
+  .img-bg {
+    background-size: 200%;
+  }
+  #scoop-bg {
+    background-position-x: -100px;
+  }
+}
+
+#scoop-bg {
+  background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.4)), url("images/ice-cream-scoop.jpg");
+}
+
+#add-sprinkles-bg {
+  background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.4)), url("images/adding-sprinkles.jpg");
+}
+
+.scoop-options .text-on-photo {
+  flex: 1 0 100%;
+  justify-content: center;
+  padding: 32px 48px;
+  margin: 32px auto 0 auto;
+  max-width: 90%;
+  font-weight: 500;
+
+}
+
+.cyan-bg {
+  background: rgba(92, 225, 230, 1);
+}
+
+.menu-div h2 {
+  background: white;
+  color: #33914f;
+  padding: 8px 16px;
+  box-shadow: black 0 0 15px;
+  width: fit-content;
+  margin: 0 auto 48px auto;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border: solid 1px black;
+  padding: 16px 32px;
+}
+
+#need-center {
+  padding-top: 22px;
+}
+
+#to-go-div li {
+  flex-grow: 1;
+}
+
+@media(min-width: 800px) {
+  #need-center-desktop {
+    padding-top: 22px;
+  }
+}
+
+#need-center-all {
+  padding-top: 22px;
+}
+
+#long-h2 {
+  margin-top: 48px;
+}
+
+.white-bg {
+  background: white;
+}
+
+hr {
+  margin: 40px auto;
+  width: 80%;
+}
+
+#footer {
+  background: rgba(92, 225, 230, .95);
+  padding: 16px 0;
+}
+
+#footer ul {
+  display: flex;
+  flex-direction: column;
+  line-height: 16px;
+  font-weight: 500;
+}
+
