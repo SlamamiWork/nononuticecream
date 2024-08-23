@@ -156,6 +156,7 @@ ul li:hover {
 #hero-div .hero {
   color: white;
   z-index: 2;
+  margin-top: 32px;
 }
 
 #hero-div a {
@@ -197,7 +198,7 @@ ul li:hover {
 
 .small-tile {
   background:white;
-  border-radius: 10px;
+  border-radius: 2.5px;
   box-shadow: black 0px 0px 15px;
   border: none;
   display: flex;
@@ -208,11 +209,12 @@ ul li:hover {
   margin: 20px 0;
   min-height: 150px;
   min-width: 200px;
+  max-width: 80%;
 }
 
 .small-tile h2 {
   color: #48c06c;
-  font-weight: 900;
+  font-weight: 600;
 }
 
 h2 {
@@ -456,7 +458,8 @@ h5 {
 }
 
 #order-plan {
-  margin-top: 50px;
+  margin: 50px auto 30px auto;
+  font-weight: 500;
 }
 
 #socials-order {
@@ -508,6 +511,11 @@ h5 {
 
 #our-story {
   margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.our-story-div p {
+  font-weight: 400;
 }
 
 #socials-index li {
