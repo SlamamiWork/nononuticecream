@@ -11,6 +11,7 @@ body {
   font-family: "Poppins", sans-serif;
   height: fit-content;
   width: 100%;
+  background-color: #a7d9e0; /* Added to match your tile background */
 }
 
 a {
@@ -21,13 +22,13 @@ a {
 
 header {
   padding: 0 20px;
-  background-color: #5CE1E6;
+  background-color: transparent; /* Changed from #5CE1E6 to transparent */
   height: 64px;
   display: flex;
   justify-content: space-between;
   text-transform: uppercase;
-  border-bottom: 1px solid black;
-  z-index: 3;
+  position: relative; /* Added for z-index to work properly */
+  z-index: 100; 
 }
 
 #brand {
@@ -57,7 +58,28 @@ ul {
 }
 
 ul a {
-  color: white;
+  color: #333; /* Changed from white to dark color */
+  font-weight: 600;
+  position: relative;
+}
+
+ul a:hover {
+  color: #5CE1E6;
+}
+
+ul a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #5CE1E6;
+  transition: width 0.3s ease;
+}
+
+ul a:hover::after {
+  width: 100%;
 }
 
 ul li {
@@ -78,7 +100,7 @@ ul li:hover {
 #hamburger div {
   width: 28px;
   height: 3px;
-  background-color: white;
+  background-color: #333;
   margin: 6px 0;
   transition: 0.4s;
 }
@@ -114,7 +136,7 @@ ul li:hover {
   left: 0;
   height: calc(100vh - 50px);
   width: 100%;
-  background-color: rgba(92, 225, 230, 1);
+  background-color: rgba(122, 154, 155, 0.98); /* Slightly more opaque */
   z-index: 101;
   border-bottom: 1px solid black;
 }
@@ -126,7 +148,7 @@ ul li:hover {
 
 .tile {
   height: 200px;
-  background-color: #EBFEFF;
+  background-color: transparent; /* Changed from #EBFEFF to transparent */
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -147,6 +169,16 @@ ul li:hover {
   z-index: 1;
 }
 
+.content-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #EBFEFF;
+  z-index: -1; /* Place behind all content */
+}
+
 #hero-div h1 {
   font-size: 48px;
   margin-bottom: 4px;
@@ -154,7 +186,7 @@ ul li:hover {
 }
 
 #hero-div .hero {
-  color: white;
+  color: rgb(226, 226, 226);
   z-index: 2;
   margin-top: 32px;
 }
@@ -165,7 +197,7 @@ ul li:hover {
 }
 
 #hero-div button {
-  background-color: #5CE1E6;
+  background-color: #71a6ad;
   border: none;
   border-radius: 5px;
   padding: 8px 24px;
@@ -180,7 +212,7 @@ ul li:hover {
 
 #tour {
   display: flex;
-  background:rgba(92, 225, 230, 1);
+  background:#63a6ad;
   padding: 30px 5%;
   flex: 1 1 auto;
   gap: 5%;
@@ -198,7 +230,7 @@ ul li:hover {
 
 .small-tile {
   background:white;
-  border-radius: 2.5px;
+  border-radius: 50px;
   box-shadow: black 0px 0px 15px;
   border: none;
   display: flex;
